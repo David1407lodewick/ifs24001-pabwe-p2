@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae - David Simbolon</title>
+  <!-- Tailwind CSS 4 Play CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+
+  <!-- Navigasi -->
+  <nav class="bg-slate-900 text-white sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold">Nexa<span class="text-blue-500">AI</span></a>
+      <div class="space-x-6 text-sm font-medium">
+        <a href="index.html" class="hover:text-blue-400 transition">Beranda</a>
+        <a href="blog.html" class="hover:text-blue-400 transition">Blog</a>
+        <a href="cv.html" class="text-blue-400 font-semibold">CV Developer</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Container CV -->
+  <main class="max-w-4xl mx-auto my-10 p-6 sm:p-10 bg-white shadow-xl rounded-xl flex-grow border border-slate-200">
+    
+    <!-- Header Profil -->
+    <header class="flex flex-col sm:flex-row items-center gap-6 border-b border-slate-200 pb-8">
+      <div class="w-32 h-32 rounded-full bg-blue-100 flex items-center justify-center text-4xl font-bold text-blue-600 border-4 border-blue-500 shadow-md">
+        DS
+      </div>
+      <div class="text-center sm:text-left flex-1">
+        <h1 class="text-3xl font-extrabold text-slate-900">David Simbolon</h1>
+        <p class="text-lg font-semibold text-blue-600 mt-1">S1 Informatika Student & AI Engineer Enthusiast</p>
+        
+        <!-- Info Kontak -->
+        <div class="mt-4 flex flex-wrap justify-center sm:justify-start gap-4 text-xs text-slate-600">
+          <span class="flex items-center gap-1">📍 Institute Technology Del</span>
+          <span class="flex items-center gap-1">✉️ [email kamu]</span>
+          <span class="flex items-center gap-1">📞 [nomor kamu]</span>
+          <span class="flex items-center gap-1">🔗 [link LinkedIn]</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Grid Konten CV -->
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Kolom Kiri (Ringkasan & Skill) -->
+      <div class="space-y-6">
+        <!-- Tentamg Saya -->
+        <section>
+          <h2 class="text-lg font-bold text-slate-900 border-b-2 border-blue-500 pb-1 mb-3">Tentang Saya</h2>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Mahasiswa S1 Informatika yang berfokus pada rekayasa perangkat lunak web, pengembangan algoritma Machine Learning, serta analisis data statistik.
+          </p>
+        </section>
+
+        <!-- Skill -->
+        <section>
+          <h2 class="text-lg font-bold text-slate-900 border-b-2 border-blue-500 pb-1 mb-3">Keahlian Utama</h2>
+          <div class="space-y-2">
+            <div>
+              <span class="text-xs font-semibold text-slate-700">HTML5, CSS3, JavaScript</span>
+              <div class="w-full bg-slate-200 h-2 rounded-full mt-1">
+                <div class="bg-blue-600 h-2 rounded-full w-[90%]"></div>
+              </div>
+            </div>
+            <div>
+              <span class="text-xs font-semibold text-slate-700">Python & Machine Learning</span>
+              <div class="w-full bg-slate-200 h-2 rounded-full mt-1">
+                <div class="bg-blue-600 h-2 rounded-full w-[80%]"></div>
+              </div>
+            </div>
+            <div>
+              <span class="text-xs font-semibold text-slate-700">Tailwind CSS & Bootstrap 5</span>
+              <div class="w-full bg-slate-200 h-2 rounded-full mt-1">
+                <div class="bg-blue-600 h-2 rounded-full w-[85%]"></div>
+              </div>
+            </div>
+            <div>
+              <span class="text-xs font-semibold text-slate-700">SQL & Database Design</span>
+              <div class="w-full bg-slate-200 h-2 rounded-full mt-1">
+                <div class="bg-blue-600 h-2 rounded-full w-[75%]"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bahasa -->
+        <section>
+          <h2 class="text-lg font-bold text-slate-900 border-b-2 border-blue-500 pb-1 mb-3">Bahasa</h2>
+          <ul class="text-sm text-slate-600 space-y-1">
+            <li>• Bahasa Indonesia (Native)</li>
+            <li>• Bahasa Inggris (Pasif / Akademik)</li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Kolom Kanan (Pendidikan & Pengalaman/Proyek) -->
+      <div class="md:col-span-2 space-y-6">
+        
+        <!-- Pendidikan -->
+        <section>
+          <h2 class="text-lg font-bold text-slate-900 border-b-2 border-blue-500 pb-1 mb-4">Pendidikan</h2>
+          <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="font-bold text-slate-800 text-sm">S1 Informatika</h3>
+                <p class="text-xs text-slate-600">Institut Teknologi Del</p>
+              </div>
+              <span class="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-medium">2024 - Sekarang</span>
+            </div>
+            <p class="text-xs text-slate-500 mt-2">Fokus studi pada Pemrograman Web, Probabilitas & Statistika, Sistem Operasi, dan Rekayasa Perangkat Lunak.</p>
+          </div>
+        </section>
+
+        <!-- Pengalaman & Proyek -->
+        <section>
+          <h2 class="text-lg font-bold text-slate-900 border-b-2 border-blue-500 pb-1 mb-4">Pengalaman & Proyek Akademik</h2>
+          
+          <div class="space-y-4">
+            <!-- Proyek 1 -->
+            <div class="border-l-2 border-blue-500 pl-4 py-1">
+              <h3 class="font-bold text-slate-800 text-sm">PangulaBridge - Platform Digital Pertanian</h3>
+              <p class="text-xs text-slate-500 mb-1">Proyek Inovasi Digital | 2026</p>
+              <p class="text-xs text-slate-600">Merancang konsep platform interaktif untuk menghubungkan petani dan distributor dengan fitur Fair-Price Engine dan Route Optimizer.</p>
+            </div>
+
+            <!-- Proyek 2 -->
+            <div class="border-l-2 border-blue-500 pl-4 py-1">
+              <h3 class="font-bold text-slate-800 text-sm">Aplikasi Manajemen Event Kampus</h3>
+              <p class="text-xs text-slate-500 mb-1">Pengembangan Web | 2025</p>
+              <p class="text-xs text-slate-600">Mengembangkan web app untuk mengelola pencatatan acara, pendaftaran peserta, dan ekspor laporan Word berbasis antarmuka modern.</p>
+            </div>
+
+            <!-- Proyek 3 -->
+            <div class="border-l-2 border-blue-500 pl-4 py-1">
+              <h3 class="font-bold text-slate-800 text-sm">Studi Kasus PABWE - Landing Page & Blog NexaAI</h3>
+              <p class="text-xs text-slate-500 mb-1">Tugas Praktikum | 2026</p>
+              <p class="text-xs text-slate-600">Membangun ekosistem web terintegrasi menggunakan CSS Native, Bootstrap 5, dan Tailwind CSS 4 secara responsif.</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 text-center py-4 text-xs mt-auto">
+    <p>&copy; 2026 David Simbolon (David1407lodewick). Hak Cipta Dilindungi Undang-Undang.</p>
+  </footer>
+
+</body>
+</html>
