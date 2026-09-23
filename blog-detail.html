@@ -1,66 +1,128 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mengenal Retrieval-Augmented Generation (RAG) - NexaAI Solutions</title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Mengenal Retrieval-Augmented Generation (RAG)
+    - NexaAI Solutions
+  </title>
+
 
   <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
 
   <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  >
+
+
+  <!-- Custom CSS -->
+  <link
+    rel="stylesheet"
+    href="assets/css/style.css"
+  >
+
 </head>
+
 
 <body class="bg-light d-flex flex-column min-vh-100">
 
+
   <!-- Navbar -->
-  <nav 
+  <nav
     class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
-    aria-label="Navigasi utama">
+    aria-label="Navigasi utama"
+  >
 
     <div class="container">
 
-      <a class="navbar-brand fw-bold" href="index.html">
+      <a
+        class="navbar-brand fw-bold"
+        href="index.html"
+      >
         Nexa<span class="text-primary">AI</span>
       </a>
 
+
       <!-- Tombol Menu Mobile -->
-      <button 
-        class="navbar-toggler" 
-        type="button" 
-        data-bs-toggle="collapse" 
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
         data-bs-target="#navbarNav"
         aria-controls="navbarNav"
         aria-expanded="false"
-        aria-label="Buka menu navigasi">
+        aria-label="Buka menu navigasi"
+      >
 
         <span class="navbar-toggler-icon"></span>
+
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
+
+      <div
+        class="collapse navbar-collapse"
+        id="navbarNav"
+      >
+
         <ul class="navbar-nav ms-auto">
 
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Beranda</a>
+
+            <a
+              class="nav-link"
+              href="index.html"
+            >
+              Beranda
+            </a>
+
           </li>
 
+
           <li class="nav-item">
-            <a class="nav-link active" href="blog.html" aria-current="page">
+
+            <a
+              class="nav-link active"
+              href="blog.html"
+              aria-current="page"
+            >
               Blog
             </a>
+
           </li>
 
+
           <li class="nav-item">
-            <a class="nav-link" href="cv.html">
+
+            <a
+              class="nav-link"
+              href="cv.html"
+            >
               CV Developer
             </a>
+
           </li>
 
         </ul>
+
       </div>
 
     </div>
+
   </nav>
 
 
@@ -71,12 +133,18 @@
 
       <div class="col-lg-8">
 
-        <!-- Tombol Kembali -->
-        <a 
-          href="blog.html" 
-          class="btn btn-outline-secondary btn-sm mb-4">
 
-          <i class="bi bi-arrow-left me-1" aria-hidden="true"></i>
+        <!-- Tombol Kembali -->
+        <a
+          href="blog.html"
+          class="btn btn-outline-secondary btn-sm mb-4"
+        >
+
+          <i
+            class="bi bi-arrow-left me-1"
+            aria-hidden="true"
+          ></i>
+
           Kembali ke Daftar Blog
 
         </a>
@@ -85,32 +153,68 @@
         <!-- Article Card -->
         <article class="card shadow-sm border-0 p-4">
 
+
           <div class="mb-3">
 
+
             <span class="badge bg-primary mb-2">
-              <i class="bi bi-cpu-fill me-1" aria-hidden="true"></i>
+
+              <i
+                class="bi bi-cpu-fill me-1"
+                aria-hidden="true"
+              ></i>
+
               Generative AI
+
             </span>
 
+
+            <!-- Heading utama -->
             <h1 class="fw-bold h2">
-              Mengenal Retrieval-Augmented Generation (RAG) dalam Pengembangan Sistem AI Enterprise
+
+              Mengenal Retrieval-Augmented Generation (RAG)
+              dalam Pengembangan Sistem AI Enterprise
+
             </h1>
 
-            <div class="text-muted small d-flex gap-3 align-items-center mt-2">
+
+            <div
+              class="text-muted small d-flex gap-3 align-items-center mt-2"
+            >
 
               <span>
-                <i class="bi bi-person-circle me-1" aria-hidden="true"></i>
+
+                <i
+                  class="bi bi-person-circle me-1"
+                  aria-hidden="true"
+                ></i>
+
                 David Simbolon
+
               </span>
 
+
               <span>
-                <i class="bi bi-calendar3 me-1" aria-hidden="true"></i>
+
+                <i
+                  class="bi bi-calendar3 me-1"
+                  aria-hidden="true"
+                ></i>
+
                 22 September 2026
+
               </span>
 
+
               <span>
-                <i class="bi bi-clock me-1" aria-hidden="true"></i>
+
+                <i
+                  class="bi bi-clock me-1"
+                  aria-hidden="true"
+                ></i>
+
                 5 Menit Baca
+
               </span>
 
             </div>
@@ -119,36 +223,65 @@
 
 
           <!-- Cover Image -->
-          <img 
+          <img
             src="https://images.unsplash.com/photo-1677442136019-21780efad99a?w=1000&q=80"
             class="img-fluid rounded mb-4"
-            alt="Ilustrasi teknologi Retrieval-Augmented Generation">
+            alt="Ilustrasi teknologi Retrieval-Augmented Generation"
+          >
 
 
           <!-- Body Content -->
           <div class="article-body">
 
+
             <p class="lead">
-              Large Language Model (LLM) seperti GPT-4 memiliki kemampuan generatif luar biasa, namun kerap mengalami keterbatasan seperti halusinasi informasi serta ketiadaan akses data internal perusahaan secara real-time.
+
+              Large Language Model (LLM) seperti GPT-4 memiliki
+              kemampuan generatif luar biasa, namun kerap mengalami
+              keterbatasan seperti halusinasi informasi serta
+              ketiadaan akses data internal perusahaan secara
+              real-time.
+
             </p>
 
 
+            <!-- Heading Level 2 -->
             <h2 class="h4 mt-4 text-primary">
+
               Apa Itu Retrieval-Augmented Generation (RAG)?
+
             </h2>
 
+
             <p>
-              RAG adalah arsitektur AI yang menghubungkan LLM dengan sistem pencarian dokumen eksternal. Sebelum LLM memberikan jawaban atas kueri pengguna, sistem RAG akan terlebih dahulu mengambil (retrieve) informasi relevan dari basis data vektor (vector database) perusahaan Anda.
+
+              RAG adalah arsitektur AI yang menghubungkan LLM
+              dengan sistem pencarian dokumen eksternal.
+              Sebelum LLM memberikan jawaban atas kueri pengguna,
+              sistem RAG akan terlebih dahulu mengambil (retrieve)
+              informasi relevan dari basis data vektor
+              (vector database) perusahaan Anda.
+
             </p>
 
 
             <!-- Highlight/Tips Box -->
-            <div class="alert alert-info border-start border-primary border-4 my-4">
+            <div
+              class="alert alert-info border-start border-primary border-4 my-4"
+            >
 
+              <!-- Tetap h3 secara struktur -->
               <h3 class="h5 alert-heading fw-bold">
-                <i class="bi bi-lightbulb-fill text-warning me-2" aria-hidden="true"></i>
+
+                <i
+                  class="bi bi-lightbulb-fill text-warning me-2"
+                  aria-hidden="true"
+                ></i>
+
                 Keunggulan Utama RAG:
+
               </h3>
+
 
               <ul class="mb-0 ps-3">
 
@@ -157,7 +290,8 @@
                 </li>
 
                 <li>
-                  Menghilangkan kebutuhan pelatihan ulang (fine-tuning) model yang mahal.
+                  Menghilangkan kebutuhan pelatihan ulang
+                  (fine-tuning) model yang mahal.
                 </li>
 
                 <li>
@@ -169,32 +303,55 @@
             </div>
 
 
+            <!-- Heading Level 2 -->
             <h2 class="h4 mt-4 text-primary">
+
               Tahapan Kerja Sistem RAG
+
             </h2>
+
 
             <ol>
 
               <li>
+
                 <strong>Indexing:</strong>
-                Dokumen internal dipecah menjadi beberapa bagian kecil (chunks) dan diubah menjadi vector embeddings.
+
+                Dokumen internal dipecah menjadi beberapa bagian
+                kecil (chunks) dan diubah menjadi vector embeddings.
+
               </li>
 
+
               <li>
+
                 <strong>Retrieval:</strong>
-                Saat pengguna mengajukan pertanyaan, sistem mencari chunks yang paling relevan.
+
+                Saat pengguna mengajukan pertanyaan, sistem mencari
+                chunks yang paling relevan.
+
               </li>
 
+
               <li>
+
                 <strong>Generation:</strong>
-                LLM menyusun jawaban dengan panduan teks kontekstual yang telah ditemukan.
+
+                LLM menyusun jawaban dengan panduan teks
+                kontekstual yang telah ditemukan.
+
               </li>
 
             </ol>
 
 
             <p>
-              Implementasi RAG di NexaAI Solutions memungkinkan perusahaan mengintegrasikan ratusan dokumen SOP dan laporan keuangan ke dalam chatbot internal secara instan.
+
+              Implementasi RAG di NexaAI Solutions memungkinkan
+              perusahaan mengintegrasikan ratusan dokumen SOP dan
+              laporan keuangan ke dalam chatbot internal secara
+              instan.
+
             </p>
 
           </div>
@@ -203,16 +360,23 @@
           <!-- Section Komentar -->
           <hr class="my-5">
 
-          <section 
+
+          <section
             class="comments-section"
-            aria-labelledby="comments-title">
+            aria-labelledby="comments-title"
+          >
 
-            <h2 id="comments-title" class="h4 fw-bold mb-4">
 
-              <i 
+            <!-- Heading Level 2 -->
+            <h2
+              id="comments-title"
+              class="h4 fw-bold mb-4"
+            >
+
+              <i
                 class="bi bi-chat-left-text me-2"
-                aria-hidden="true">
-              </i>
+                aria-hidden="true"
+              ></i>
 
               Komentar (1)
 
@@ -222,17 +386,21 @@
             <!-- Komentar -->
             <div class="d-flex mb-4">
 
+
               <div class="flex-shrink-0">
 
-                <i 
+                <i
                   class="bi bi-person-circle fs-2 text-secondary"
-                  aria-hidden="true">
-                </i>
+                  aria-hidden="true"
+                ></i>
 
               </div>
 
+
               <div class="ms-3">
 
+
+                <!-- Heading Level 3 -->
                 <h3 class="h6 fw-bold mb-1">
 
                   Discha Hutasoit
@@ -243,8 +411,12 @@
 
                 </h3>
 
+
                 <p class="mb-0 text-muted">
-                  Penjelasannya sangat jelas dan mudah dipahami untuk tugas praktikum PABWE ini!
+
+                  Penjelasannya sangat jelas dan mudah dipahami
+                  untuk tugas praktikum PABWE ini!
+
                 </p>
 
               </div>
@@ -255,55 +427,74 @@
             <!-- Form Tambah Komentar -->
             <div class="card bg-light border-0 p-3">
 
+
+              <!-- Heading Level 3 -->
               <h3 class="h6 fw-bold mb-3">
+
                 Tinggalkan Komentar
+
               </h3>
 
-              <form action="#" method="post">
+
+              <form
+                action="#"
+                method="post"
+              >
+
 
                 <div class="mb-3">
 
-                  <label for="nama" class="form-label">
+                  <label
+                    for="nama"
+                    class="form-label"
+                  >
                     Nama Anda
                   </label>
 
-                  <input 
+
+                  <input
                     type="text"
                     id="nama"
                     name="nama"
                     class="form-control"
                     placeholder="Nama Anda"
-                    required>
+                    required
+                  >
 
                 </div>
 
 
                 <div class="mb-3">
 
-                  <label for="komentar" class="form-label">
+                  <label
+                    for="komentar"
+                    class="form-label"
+                  >
                     Komentar
                   </label>
 
-                  <textarea 
+
+                  <textarea
                     id="komentar"
                     name="komentar"
                     class="form-control"
                     rows="3"
                     placeholder="Tulis komentar..."
-                    required>
-                  </textarea>
+                    required
+                  ></textarea>
 
                 </div>
 
 
-                <button 
+                <button
                   type="submit"
-                  class="btn btn-primary btn-sm">
+                  class="btn btn-primary btn-sm"
+                >
 
-                  <i 
+                  <i
                     class="bi bi-send me-1"
-                    aria-hidden="true">
-                  </i>
+                    aria-hidden="true"
+                  ></i>
 
                   Kirim Komentar
 
@@ -330,8 +521,11 @@
     <div class="container">
 
       <p class="mb-0 small">
-        &copy; 2026 NexaAI Solutions (David1407lodewick).
+
+        &copy; 2026 NexaAI Solutions
+        (David1407lodewick).
         Hak Cipta Dilindungi Undang-Undang.
+
       </p>
 
     </div>
@@ -340,7 +534,10 @@
 
 
   <!-- Bootstrap 5 JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
 
 </body>
+
 </html>
